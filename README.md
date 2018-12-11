@@ -3,6 +3,7 @@
 Simple package MongoDB driver for PHP
 
 when you after composer install
+
 1.add line in ./vendor/composer/autoload_classmap.php
     'mysticzhong\\mongobuilder' => $vendorDir . '/mysticzhong/mongobuilder/src/mongobuilder.php',
 
