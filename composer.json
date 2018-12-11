@@ -10,5 +10,10 @@
     "license": "MIT",
     "require": {
         "php": ">=5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "mysticzhong\\": "src/"
+        }
     }
 }
