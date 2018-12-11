@@ -1,0 +1,14 @@
+{
+    "name": "mysticzhong/mongobuilder",
+    "description": "Simple package MongoDB driver for PHP",
+    "authors": [
+        {
+            "name": "MysTic Zhong",
+            "email": "352306457@qq.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.6"
+    }
+}
