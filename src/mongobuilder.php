@@ -14,16 +14,18 @@ class mongobuilder{
     /*
      * 架构函数
      */
-    public function __construct(){
+    public function __construct($customConfig=[]){
 
+        // 前置默认链接参数
         $config = [
-            // 'type'     => '\think\mongo\Connection', // 数据库类型
             'hostname' => '127.0.0.1',  // 服务器地址
-            'database' => 'xxxxx',      // 数据库名
+            'database' => 'mongo',      // 数据库名
             'username' => 'root',       // 数据库用户名
-            'password' => 'xxxxx',      // 数据库密码
+            'password' => 'root',       // 数据库密码
             'hostport' => '27017',      // 数据库连接端口
         ];
+
+        $config = (count($customConfig) == 0) ? $config : $customConfig;
 
         $this->manager = new \MongoDB\Driver\Manager("mongodb://".$config['username'].":".$config['password']."@".$config['hostname'].":".$config['hostport']);
 
